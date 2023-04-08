@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/snickersShopOnReactJS/static/css/main.0c5db946.css",
-    "main.js": "/snickersShopOnReactJS/static/js/main.ff39c979.js",
+    "main.css": "/snickersShopOnReactJS/static/css/main.025e65a9.css",
+    "main.js": "/snickersShopOnReactJS/static/js/main.495051af.js",
     "static/media/sneackers2.png": "/snickersShopOnReactJS/static/media/sneackers2.6aa5627a9415adbb603f.png",
     "static/media/sneackers4.png": "/snickersShopOnReactJS/static/media/sneackers4.5aad60ae52900b36c794.png",
     "static/media/sneackers8.png": "/snickersShopOnReactJS/static/media/sneackers8.266d70e2f3f13b7bd5be.png",
@@ -11,7 +11,10 @@
     "static/media/sneackers6.png": "/snickersShopOnReactJS/static/media/sneackers6.b21828be86e596e2486b.png",
     "static/media/sneackers1.png": "/snickersShopOnReactJS/static/media/sneackers1.aa5fa3ca1b72613cd8ef.png",
     "static/media/logo.svg": "/snickersShopOnReactJS/static/media/logo.75d0b4463afe5259be8c2c1b30e72e18.svg",
+    "static/media/twitter.svg": "/snickersShopOnReactJS/static/media/twitter.5052b1f7f1abbc5d8251e8c5e09eaff5.svg",
+    "static/media/google.svg": "/snickersShopOnReactJS/static/media/google.9d4a7d7d4dd94f2db9541f888625b91a.svg",
     "static/media/favorite.svg": "/snickersShopOnReactJS/static/media/favorite.3871a7a5682d789e4ca17c8d4306cca2.svg",
+    "static/media/vkontakte.svg": "/snickersShopOnReactJS/static/media/vkontakte.83145cdf08fd064e940776f812eca64d.svg",
     "static/media/checked.svg": "/snickersShopOnReactJS/static/media/checked.bb9cea60505d4867ec3983a41dfb257a.svg",
     "static/media/profileicon.svg": "/snickersShopOnReactJS/static/media/profileicon.a8a3784b732e1120fa16b3ea35f936b9.svg",
     "static/media/card_basket.svg": "/snickersShopOnReactJS/static/media/card_basket.cc751ca6af00f3bc74a86711880802d2.svg",
@@ -20,11 +23,11 @@
     "static/media/btn-remove.svg": "/snickersShopOnReactJS/static/media/btn-remove.b1fef0aa93fbf25374f4991d23f900d8.svg",
     "static/media/plus.svg": "/snickersShopOnReactJS/static/media/plus.d5cb2e4c32fe893d1e244c2f65bc76a1.svg",
     "static/media/arrow.svg": "/snickersShopOnReactJS/static/media/arrow.fc3222511ec5a224a4abf3bbf4c2566f.svg",
-    "main.0c5db946.css.map": "/snickersShopOnReactJS/static/css/main.0c5db946.css.map",
-    "main.ff39c979.js.map": "/snickersShopOnReactJS/static/js/main.ff39c979.js.map"
+    "main.025e65a9.css.map": "/snickersShopOnReactJS/static/css/main.025e65a9.css.map",
+    "main.495051af.js.map": "/snickersShopOnReactJS/static/js/main.495051af.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c5db946.css",
-    "static/js/main.ff39c979.js"
+    "static/css/main.025e65a9.css",
+    "static/js/main.495051af.js"
   ]
 }
