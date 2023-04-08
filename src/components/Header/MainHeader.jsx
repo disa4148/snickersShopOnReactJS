@@ -24,7 +24,7 @@ export const MainHeader = (props) => {
       <Basket onClick={props.onClickCart} className={styles.basket} />
       <p>0 руб.</p>
       <Favorite />
-      <ProfileIcon />
+      <ProfileIcon onClick={props.onClickModal} className={styles.profile}/>
     </div>
   </header>
   )

@@ -5,6 +5,7 @@ import CardStyles from './components/Card/Card.module.scss';
 import MainHeader from "./components/Header/MainHeader";
 import Card from "./components/Card/Card";
 import Drawer from "./components/Drawer/Drawer";
+import ModalWindow from "./components/Modal/ModalWindow";
 
 import search from "./img/search.svg";
 import { useState } from "react";
@@ -23,18 +24,20 @@ const arr = [ //Массив элементов, для передачи про�
 
 function App() {
   const [cartOpened, setCartOpened] = useState(false);
+  const [modalOpened, setModalOpened] = useState(false);
   const [cartItems, setCartItems] = useState([]);
 
   const onAddToCart = (obj) => {
     setCartItems([ ...cartItems, obj]) // ...Берёт все старые данные, которые есть в cartItems и в конец добавляет obj
   }
 
-  console.log(cartItems, 'Вот тебе нахуй кроссовки')
+  
   return (
     <>
       <div className="wrapper">
+        {modalOpened && <ModalWindow onCloseModal={() => setModalOpened(false)}/>}
         {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)}/>}
-        <MainHeader onClickCart={() => setCartOpened(true)} />
+        <MainHeader onClickModal={() => setModalOpened(true)} onClickCart={() => setCartOpened(true)} />
         <main className="firstBlock">
           <div className="wrapperCatalog">
             <h1 className="titleCatalog">Все кроссовки</h1>
