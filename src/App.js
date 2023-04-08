@@ -23,11 +23,13 @@ const arr = [ //Массив элементов, для передачи про�
 
 function App() {
   const [cartOpened, setCartOpened] = useState(false);
-  const [cartItems, setCartItems] = useState([
-    {firstname: "Мужские кроссовки", secondName:"Jordan Air Jordan 11", price: "10 499 ", imageUrl: require('./img/cards/sneackers7.png')},
-    {firstname: "Кроссовки Puma X", secondName:"Nike LeBron XVIII", price: "16 499 ", imageUrl: require('./img/cards/sneackers8.png')},
-  ]);
+  const [cartItems, setCartItems] = useState([]);
 
+  const onAddToCart = (obj) => {
+    setCartItems([ ...cartItems, obj]) // ...Берёт все старые данные, которые есть в cartItems и в конец добавляет obj
+  }
+
+  console.log(cartItems, 'Вот тебе нахуй кроссовки')
   return (
     <>
       <div className="wrapper">
@@ -44,12 +46,13 @@ function App() {
           </div>
 
           <div className={CardStyles.cardsWrapper}>
-            {arr.map((obj) => ( 
+            {arr.map((item) => ( 
               <Card 
-                firstName={obj.firstname}
-                secondName={obj.secondName}
-                price={obj.price}
-                imageUrl={obj.imageUrl}
+                firstName={item.firstname}
+                secondName={item.secondName}
+                price={item.price}
+                imageUrl={item.imageUrl}
+                onPlus={(obj) =>onAddToCart(obj)}
               />
                 ))}
           </div>

@@ -15,8 +15,7 @@ export const Drawer = ({onClose, items = []}) => { // items - Хранятся �
           </div>
           <div className={styles.wrapperSnickers}>
 
-            {
-              items.map((obj) => ( 
+              {items.map((obj) => ( 
                 <div className={styles.cartItem}>
               <img
                 className={styles.sneackersItem}
@@ -24,7 +23,8 @@ export const Drawer = ({onClose, items = []}) => { // items - Хранятся �
                 alt="Sneackers"
               />
               <div>
-                <p>{obj.firstname}, {obj.secondName}</p>
+                <p>{obj.firstName}</p>
+                <p>{obj.secondName}</p>
                 <b>{obj.price} руб.</b>
               </div>
               <img className={styles.btnRemove} src={btnRemove} alt="Remove" />
